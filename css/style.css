@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  animation: fadeIn 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header, footer {
+  background: #000;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideDown 0.6s ease;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+header a, footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+header a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+header a:hover::after {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  animation: fadeIn 1s ease-in;
+  flex-shrink: 0;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  flex: 1;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  animation: fadeIn 1s ease;
+}
+
+.product {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+  cursor: pointer;
+}
+
+.product:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.product:hover img {
+  transform: scale(1.05);
+}
+
+.product h3 {
+  margin: 10px 0;
+}
+
+.product p {
+  color: gray;
+  transition: color 0.3s;
+}
+
+.product:hover p {
+  color: #000;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+  border-color: #000;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  outline: none;
+}
+
+form button {
+  width: 100%;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.switch {
+  text-align: center;
+  margin-top: 10px;
+  animation: fadeIn 1s ease;
+}
+
+.switch a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+.product-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeUp 0.8s ease;
+}
+
+.product-page img {
+  max-width: 400px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.product-page img:hover {
+  transform: scale(1.05);
+}
+
+.product-info {
+  flex: 1;
+  animation: fadeIn 1s ease;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.product-info:hover .price {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  header, footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .product-page {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-page img {
+    max-width: 100%;
+  }
+}
+
+.welcome {
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+.logout-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #f44336;
+  color: #fff;
+}
+

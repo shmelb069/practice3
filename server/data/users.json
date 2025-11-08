@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Администратор",
+    "email": "admin@audiostore.com",
+    "password": "admin123",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "name": "Пользователь",
+    "email": "user@mail.com",
+    "password": "user123",
+    "role": "user"
+  }
+]
+

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Sony WH-1000XM5",
+    "price": 34990,
+    "desc": "Беспроводные наушники с лучшим шумоподавлением и отличным звуком.",
+    "image": "https://avatars.mds.yandex.net/get-mpic/6321906/2a0000019209f00d895b4c68e3156548a833/orig"
+  },
+  {
+    "id": 2,
+    "name": "JBL Charge 5",
+    "price": 14990,
+    "desc": "Мощная портативная колонка с влагозащитой.",
+    "image": "https://avatars.mds.yandex.net/i?id=f249584c8d7afc8b36ebea942d4ee565_l-12656895-images-thumbs&n=13"
+  },
+  {
+    "id": 3,
+    "name": "Blue Yeti",
+    "price": 12990,
+    "desc": "USB-микрофон профессионального уровня для подкастов и стримов.",
+    "image": "https://cdn.alza.cz/Foto/f5/BL/BLM007b.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Marshall Stanmore II",
+    "price": 39990,
+    "desc": "Премиальная Bluetooth-колонка в ретро-стиле с мощным звуком.",
+    "image": "https://avatars.mds.yandex.net/i?id=030e93924d77faf51122c35ccb1872ee573793c8-5236353-images-thumbs&n=13"
+  },
+  {
+    "id": 5,
+    "name": "Audio-Technica ATH-M50x",
+    "price": 18990,
+    "desc": "Студийные наушники с чистым звуком и отличной изоляцией.",
+    "image": "https://3103103.by/image/cache/catalog/quad/29/img_rd29395_005-1024x1024.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Bang & Olufsen Beoplay H9",
+    "price": 59990,
+    "desc": "Элитные наушники с активным шумоподавлением и кожаными амбушюрами.",
+    "image": "https://avatars.mds.yandex.net/i?id=0009c01336a8a6b2d11da6c6d37930a794a124e9-12607459-images-thumbs&n=13"
+  },
+  {
+    "id": 7,
+    "name": "Logitech G Pro X",
+    "price": 14990,
+    "desc": "Геймерская гарнитура с микрофоном Blue VO!CE и отличным позиционированием звука.",
+    "image": "https://avatars.mds.yandex.net/i?id=9d4982e2ebd3e840714f297b8fba8facfd30c69d-5285139-images-thumbs&n=13"
+  },
+  {
+    "id": 8,
+    "name": "RØDE NT-USB Mini",
+    "price": 11990,
+    "desc": "Компактный USB-микрофон с высоким качеством записи и магнитным креплением.",
+    "image": "https://images.hepsiburada.net/description-assets/description-prod-30/807e41d8-719f-4e00-abc5-fc17bdc3be26.png"
+  }
+]
