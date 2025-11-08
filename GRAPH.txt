@@ -1,0 +1,10 @@
+*   f62e03e (HEAD -> main, origin/main) слил
+|\  
+| * 7a6d1a3 (origin/dev-products, dev-products) продукты
+* |   289aed4 слил
+|\ \  
+| * | a16d7fd (origin/dev-auth, dev-auth) авторизация
+| |/  
+* / 759243d (origin/dev-admin, dev-admin) админка
+|/  
+* c2d50bf база
